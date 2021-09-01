@@ -12,7 +12,6 @@ import PropTypes from 'prop-types';
 import ShareTwoToneIcon from '@material-ui/icons/ShareTwoTone';
 import AttachMoneyTwoToneIcon from '@material-ui/icons/AttachMoneyTwoTone';
 import CastForEducationTwoToneIcon from '@material-ui/icons/CastForEducationTwoTone';
-import BALANCE from '../contracts/BALANCE.json';
 import Web3 from 'web3';
 
 const useStyles = makeStyles((theme) => ({
