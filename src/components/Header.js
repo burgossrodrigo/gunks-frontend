@@ -167,8 +167,12 @@ const Header = (props) => {
 		<>  
 
 		
-		<Toolbar className={classes.breadCrumbs} style={{color: 'secundary'}} >	
+		<Toolbar className={classes.breadCrumbs} style={{color: 'secundary'}} >
+		<Box>
+			<img src='../image/logo.png' />
 			<Typography variant='h4' className={classes.title}> Seth Gallery </Typography>
+		</Box>		
+			
 		<Box mr={5}>		
 			<Breadcrumbs aria-label="breadcrumb" separator='|'>
 			  <Link color="inherit" href='https://t.me/SethNFT' className={classes.link} variant='inherit' >
