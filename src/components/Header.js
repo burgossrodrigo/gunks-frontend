@@ -142,7 +142,7 @@ const useStyle = makeStyles((theme) => ({
 			
 			display: 'flex',
 			fontSize: '35px',
-			borderBottom: '1px solid white'
+			borderBottom: '1px solid #ffb800'
 			
 		}
 	  
@@ -242,12 +242,22 @@ Gunks is an NFT Collection of 4269 unique characters that bring utility by givin
 
 						</Typography>
 					</Grid>
-					<Grid container style={{marginLeft: '37vw', marginTop: '10vh'}}>
+					<Grid container style={{marginLeft: '32vw', marginTop: '10vh'}}>
 						<Grid item>
-							<Button>Learn More</Button>
+						<Button style={{
+								marginRight: '5vw', 
+								background: 'linear-gradient(90deg, #f6d048, #c85423)',
+								color: 'white'
+								}} size="large" variant="contained">Learn More</Button>
+
 						</Grid>
 						<Grid>
-							<Button>Roadmap</Button>
+						<Button style={{
+								marginRight: '5vw', 
+								background: 'linear-gradient(90deg, #f6d048, #c85423)',
+								color: 'white'
+								}} size="large" variant="contained">Learn More</Button>
+
 						</Grid>
 					</Grid>
 				</Grid>

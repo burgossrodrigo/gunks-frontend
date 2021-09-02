@@ -3,7 +3,8 @@ import { CardContent,
 		 Card, 
 		 Typography, 
 		 Box, 
-		 Divider } from '@material-ui/core';
+		 Divider,
+		Grid } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 import Button from '@material-ui/core/Button';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -134,7 +135,7 @@ const useStyles = makeStyles((theme) => ({
   
 })); 
 
-const FeaturedPost = (props, {blockchain, drizzle, drizzleState, contracts}) => {
+const FeaturedPost = (props) => {
 	
 	
 	const [balanceName, setBalanceName] = useState('');
@@ -159,41 +160,18 @@ const FeaturedPost = (props, {blockchain, drizzle, drizzleState, contracts}) => 
 	
 		<Box className={classes.infoWrapper} mt={5}>
 	
-			<Box className={classes.info} flexDirection='column'>
-				<Box className={classes.infoIcon}>
-					<ShareTwoToneIcon  fontSize="large" />
-				</Box>	
-					<Typography variant='caption'>
-						Seth Ecossystem will be an dAPP with NFT orientation, intially on BSC but soon crosschain. In an near future we will run anf NFT cardgame with SETH and NFT airdrop award and charity
-						NFT auctions.	
-					</Typography>
-			</Box>
-			
-			<Divider />
-
-	
-				<Box className={classes.info} flexDirection='column'>
-				<Box className={classes.infoIcon}>	
-					<AttachMoneyTwoToneIcon fontSize="large" color='secundary' />
-				</Box>	
-				<Typography variant='caption'>
-						In our ecosystem we will have NFT trading and auctions, profits will be share among SETH holders by adding 30% of the profit to the token liquidity. Holders of some unique
-						contracts will be given zero taxes
-					</Typography>
-				</Box>
-
-				<Divider />	
-
-
-				<Box className={classes.info} flexDirection='column'>
-				<Box className={classes.infoIcon}>
-					<CastForEducationTwoToneIcon fontSize="large" className={classes.infoIcon} color='error' />
-				</Box>	
-					<Typography variant='caption'>
-						Our git repository is already avaiable for anyone to copy at will still. We will build an youtube channel
-						to teach about ERC721 openzeppelin, web3, digital art and much more!
-					</Typography>
-				</Box>
+		<Grid container style={{marginLeft: '32vw', marginTop: '10vh'}}>
+						<Grid item>
+							<Button style={{
+								marginRight: '5vw', 
+								background: 'linear-gradient(90deg, #f6d048, #c85423)',
+								color: 'white'
+								}} size="large" variant="contained">Learn More</Button>
+						</Grid>
+						<Grid>
+							<Button variant="contained" size="large" color="primary">Roadmap</Button>
+						</Grid>
+		</Grid>
 
 		</Box>
 		
