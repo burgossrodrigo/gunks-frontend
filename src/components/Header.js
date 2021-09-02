@@ -7,7 +7,8 @@ import { Toolbar,
 		 Breadcrumbs,
 		 Button,
 		 Box,
-		 Icon } from '@material-ui/core';
+		 Icon,
+		Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon  from '@material-ui/icons/Menu';
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
@@ -50,7 +51,7 @@ const useStyle = makeStyles((theme) => ({
   link: {
 	  
 
-	  fontSize: 15,
+	  fontSize: 25,
 	  textTransform: 'uppercase',
 	  justifyContent: 'center',
 	  fontFamily: 'arial'
@@ -60,6 +61,7 @@ const useStyle = makeStyles((theme) => ({
   breadcrumb: {
 	
      flexGrow: 1,
+	 borderBottom: '1px solid '
 	  
   },
   
@@ -139,10 +141,28 @@ const useStyle = makeStyles((theme) => ({
 		[theme.breakpoints.between('sm', 'xl')]: {
 			
 			display: 'flex',
-			fontSize: '35px'
+			fontSize: '35px',
+			borderBottom: '1px solid white'
 			
 		}
 	  
+  },
+
+  bread:{
+
+	[theme.breakpoints.only('xs')]: {
+			
+		display: 'none',
+			
+		},
+		[theme.breakpoints.between('sm', 'xl')]: {
+			
+			width: '70vw',
+			display: 'flex',
+			flexDirection: 'row'
+			
+		}
+
   }
   
   
@@ -168,40 +188,27 @@ const Header = (props) => {
 
 		
 		<Toolbar className={classes.breadCrumbs} style={{color: 'secundary'}} >
-		<Box>
-			<img src='../image/logo.png' />
-			<Typography variant='h4' className={classes.title}> Seth Gallery </Typography>
-		</Box>		
-			
-		<Box mr={5}>		
-			<Breadcrumbs aria-label="breadcrumb" separator='|'>
-			  <Link color="inherit" href='https://t.me/SethNFT' className={classes.link} variant='inherit' >
-				Telegram
+			<Grid container>
+				<Grid item><img src={require('./image/logo.png')} /></Grid>
+				<Grid item><Typography style={{marginTop: '6vh', marginLeft: '2vw'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
+			</Grid>				
+			<Breadcrumbs className={classes.bread} aria-label="breadcrumb" separator=' | '>
+			  <Link color="inherit" href='' className={classes.link} variant='inherit' >
+				ABOUT
 			  </Link>
-			  <Link underline='hover' href='https://www.reddit.com/r/SethNFT/' className={classes.link} variant='inherit' color="inherit" >
-				Reddit
+			  <Link underline='hover' href='' className={classes.link} variant='inherit' color="inherit" >
+				TEAM
 			  </Link>
-			  <Link underline='hover' href='https://twitter.com/SethNft' className={classes.link} variant='inherit' color="inherit" >
-				Twitter
+			  <Link underline='hover' href='' className={classes.link} variant='inherit' color="inherit" >
+				ROADMAP
 			  </Link>
 			  <Link underline='hover' className={classes.link} variant='inherit' color="inherit" >
-				BSC Scan
+				FAQ
 			  </Link>
 			  <Link underline='hover' className={classes.link} variant='inherit' color="inherit" >
 				Chart
 			  </Link>
 			</Breadcrumbs>
-		</Box>	
-				  <Button
-			variant="contained"
-			color="primary"
-			className={classes.button}
-			startIcon={            <Icon classes={{root: classes.iconRoot}}>
-				  <img className={classes.imageIcon} src="https://cryptologos.cc/logos/pancakeswap-cake-logo.png"/>
-				</Icon>  }
-		  >
-			Buy
-		  </Button>
 		</Toolbar>
 	
 		
@@ -223,18 +230,27 @@ const Header = (props) => {
 					</SideDrawer>
 					
 		</Toolbar> 
-				
-			<Toolbar className={classes.title}>
-				<Typography variant="h2"><Carousel /></Typography>				
-			</Toolbar>
 
 			<Toolbar className={classes.countdown}>
-				<Typography>
-					<Typography variant='h3'>Countdown</Typography>
-				</Typography>
-				<Typography variant='h2'>
-					<Countdown date={Date.parse('2021-07-17T21:00:00Z')} />
-				</Typography>
+				<Grid container style={{marginTop: '10vh'}}>
+					<Grid item>
+						<Typography align='center' variant='h1'>GUNKS</Typography>
+						<Typography style={{width: '50%', marginLeft: '22vw', marginTop: '10vh'}}align='center' variant='h5'>
+
+						GUNKS
+Gunks is an NFT Collection of 4269 unique characters that bring utility by giving back to the community with unique marketing approaches.
+
+						</Typography>
+					</Grid>
+					<Grid container style={{marginLeft: '37vw', marginTop: '10vh'}}>
+						<Grid item>
+							<Button>Learn More</Button>
+						</Grid>
+						<Grid>
+							<Button>Roadmap</Button>
+						</Grid>
+					</Grid>
+				</Grid>
 			</Toolbar>
 
 			<Divider /> 	

@@ -10,7 +10,6 @@ import getWeb3 from './ethereum.js';
 import Footer from './components/Footer';
 import RoadMap from './components/Timeline';
 
-const drizzle = new Drizzle(drizzleOptions);
 
 function App() {
 		

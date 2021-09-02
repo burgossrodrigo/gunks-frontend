@@ -147,15 +147,7 @@ const FeaturedPost = (props, {blockchain, drizzle, drizzleState, contracts}) => 
 
 			const web3 = new Web3(new Web3.providers.WebsocketProvider('wss://agitated-leakey:sprung-film-balmy-expose-uneven-atop@ws-nd-896-839-440.p2pify.com'));			
 			const networkId = await web3.eth.net.getId();
-			const deployedNetwork = BALANCE.networks[networkId];
-			const balance = new web3.eth.Contract(
-			  BALANCE.abi,
-			  deployedNetwork && deployedNetwork.address,
-			);
 			const addresses = await web3.eth.getAccounts();
-			const gas = await 
-    		balance.methods.buy(0).estimateGas();
-			await balance.methods.buy(0).send({from: addresses[0], value: '5000000000000000000'});
 		};
 
 	
