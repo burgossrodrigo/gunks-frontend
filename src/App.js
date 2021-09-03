@@ -25,7 +25,7 @@ function App() {
 		getWeb3();
 
 		useEffect(() => {
-			document.title = `Seth NFT Gallery`;
+			document.title = `Gunks`;
 		  });
 
   return (

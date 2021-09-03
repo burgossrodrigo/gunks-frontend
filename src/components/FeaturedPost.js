@@ -226,6 +226,7 @@ const FeaturedPost = (props) => {
 				</Typography>						
 			</Grid>
 			<Divider />
+			<Grid container></Grid>
 			<List>
 			<ListItem button>
 				<ListItemIcon>
@@ -235,6 +236,62 @@ const FeaturedPost = (props) => {
 				</ListItemIcon>	
 				<ListItemText primary="Mass marketing at initial phase including" />
 			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Twitter promos" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Reddit promotions" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Telegram promos" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Giveaways" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Cash giveaways" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Nft giveaways" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="1000 Discord members" />
+			</ListItem>																					
 			</List>			
 		</Grid>
 		
