@@ -19,6 +19,10 @@ import ShareTwoToneIcon from '@material-ui/icons/ShareTwoTone';
 import AttachMoneyTwoToneIcon from '@material-ui/icons/AttachMoneyTwoTone';
 import CastForEducationTwoToneIcon from '@material-ui/icons/CastForEducationTwoTone';
 import Web3 from 'web3';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -157,7 +161,12 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.only('xs')]:{display: 'none'},
 		[theme.breakpoints.between('sm', 'xl')]:{width:'223', height:'223px'}
 
-	}
+	},
+
+	heading: {
+		fontSize: theme.typography.pxToRem(15),
+		fontWeight: theme.typography.fontWeightRegular,
+	  },	
 		
 
 
@@ -226,7 +235,7 @@ const FeaturedPost = (props) => {
 				</Typography>						
 			</Grid>
 			<Divider />
-			<Grid container></Grid>
+			<Grid item xs={12} sm={6} md={6} lg={6} xl={6} justifyContent="center">
 			<List>
 			<ListItem button>
 				<ListItemIcon>
@@ -292,7 +301,205 @@ const FeaturedPost = (props) => {
 				</ListItemIcon>	
 				<ListItemText primary="1000 Discord members" />
 			</ListItem>																					
-			</List>			
+			</List>
+			</Grid>
+			<Grid item xs={12} sm={6} md={6} lg={6} xl={6} >
+				<img style={{float: 'right', marginTop: '15vh'}} src={require('./image/2.jpg')} height={'278'} width={'278'}  />	
+			</Grid>
+			<Grid item xs={12} sm={6} md={6} lg={6} xl={6} >
+			<List style={{marginTop: '15vh', float: 'left'}}>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Mass marketing at initial phase including" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Twitter promos" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Reddit promotions" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Telegram promos" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Giveaways" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Cash giveaways" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="Nft giveaways" />
+			</ListItem>
+			<ListItem button>
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					</Icon> 
+				</ListItemIcon>	
+				<ListItemText primary="1000 Discord members" />
+			</ListItem>																					
+			</List>
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={6} md={6} lg={6} xl={6} >
+				<img style={{float: 'right', marginTop: '15vh'}} src={require('./image/2.jpg')} height={'278'} width={'278'}  />
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+			<Accordion>
+				<AccordionSummary
+				expandIcon={<ExpandMoreIcon />}
+				aria-controls="panel1a-content"
+				id="panel1a-header"
+				>
+				<Typography className={classes.heading}>Can i joing gunks community?</Typography>
+				</AccordionSummary>
+				<Divider />
+				<AccordionDetails>	
+				<Typography>
+					This is the name of the race of Alt-896 inhabitants
+				</Typography>
+				</AccordionDetails>
+			</Accordion>
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+			<Accordion>
+				<AccordionSummary
+				expandIcon={<ExpandMoreIcon />}
+				aria-controls="panel1a-content"
+				id="panel1a-header"
+				>
+				<Typography className={classes.heading}>What is Gunks?</Typography>
+				</AccordionSummary>
+				<Divider />
+				<AccordionDetails>	
+				<Typography>
+					Actually it doesn`t. For example: 7,777 Kedu
+				</Typography>
+				</AccordionDetails>
+			</Accordion>
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+			<Accordion>
+				<AccordionSummary
+				expandIcon={<ExpandMoreIcon />}
+				aria-controls="panel1a-content"
+				id="panel1a-header"
+				>
+				<Typography className={classes.heading}>How do I buy a Gunks NFT?</Typography>
+				</AccordionSummary>
+				<Divider />
+				<AccordionDetails>	
+				<Typography>
+				Over 300 traits, hand drawn from bottom of our hearts. Also, if we count the layers for each Kedu, there are 8 different of them. So, basically there was total of over 100,000,000 possible variations of Kedu but we patiently chose only 7,777 dope Kedu.
+				</Typography>
+				</AccordionDetails>
+			</Accordion>
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+			<Accordion>
+				<AccordionSummary
+				expandIcon={<ExpandMoreIcon />}
+				aria-controls="panel1a-content"
+				id="panel1a-header"
+				>
+				<Typography className={classes.heading}>How do I buy a Gunks NFT?</Typography>
+				</AccordionSummary>
+				<Divider />
+				<AccordionDetails>	
+				<Typography>
+				Over 300 traits, hand drawn from bottom of our hearts. Also, if we count the layers for each Kedu, there are 8 different of them. So, basically there was total of over 100,000,000 possible variations of Kedu but we patiently chose only 7,777 dope Kedu.
+				</Typography>
+				</AccordionDetails>
+			</Accordion>
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+			<Accordion>
+				<AccordionSummary
+				expandIcon={<ExpandMoreIcon />}
+				aria-controls="panel1a-content"
+				id="panel1a-header"
+				>
+				<Typography className={classes.heading}>Can I still mint one?</Typography>
+				</AccordionSummary>
+				<Divider />
+				<AccordionDetails>	
+				<Typography>
+				During the public mint, you can get a Kedu on this website via Metamask web3 extension. If you were not able to get one first hand, you can always buy one from our owners on secondary markets such as Opensea, Rarible...
+				</Typography>
+				</AccordionDetails>
+			</Accordion>
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+			<Accordion>
+				<AccordionSummary
+				expandIcon={<ExpandMoreIcon />}
+				aria-controls="panel1a-content"
+				id="panel1a-header"
+				>
+				<Typography className={classes.heading}>Boring gas wars... How do you guys prevent this part?</Typography>
+				</AccordionSummary>
+				<Divider />
+				<AccordionDetails>	
+				<Typography>
+				The best way to avoid gas wars is holding Alt Multivisa. This is the official mint pass for early private mint (24h of duration). For each Alt Multivisa you have access to mint max of 3 Kedu.
+
+Btw, actually this is not just a mint pass. The validity period is 5 years (!) and all Multivisa have really huge benefits for their holders. So, if you want to read all the details please welcome to our Discord
+				</Typography>
+				</AccordionDetails>
+			</Accordion>
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+			<Accordion>
+				<AccordionSummary
+				expandIcon={<ExpandMoreIcon />}
+				aria-controls="panel1a-content"
+				id="panel1a-header"
+				>
+				<Typography className={classes.heading}>I am a newbie on NFT space. What is NFT and Metamask?</Typography>
+				</AccordionSummary>
+				<Divider />
+				<AccordionDetails>	
+				<Typography>
+				A non-fungible token (NFT) is a unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable. NFTs can be used to represent items such as photos, videos, audio, and other types of digital files. Access to any copy of the original file, however, is not restricted to the buyer of the NFT. While copies of these digital items are available for anyone to obtain, NFTs are tracked on blockchains to provide the owner with a proof of ownership that is separate from copyright.
+
+MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain. It allows users to access their Ethereum wallet through a browser extension or mobile app, which can then be used to interact with decentralized applications.
+				</Typography>
+				</AccordionDetails>
+			</Accordion>
+			</Grid>						
 		</Grid>
 		
 		
