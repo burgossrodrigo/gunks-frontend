@@ -178,6 +178,15 @@ const useStyles = makeStyles((theme) => ({
 	[theme.breakpoints.only('xs')]:{marginTop: '10vh', marginLeft: '8vw'},
 	[theme.breakpoints.between('sm', 'xl')]:{marginTop: '10vh', marginLeft: '20vw'}
 
+  },
+
+  accordeon:{
+
+	padding: '20px',
+    border: '2px solid #FFC40B',
+    borderRadius: '10px 10px 10px 10px',
+    backgroundColor: 'black'
+
   }
   
 })); 
@@ -378,7 +387,7 @@ const FeaturedPost = (props) => {
 				<img style={{float: 'right', marginTop: '15vh'}} src={require('./image/2.jpg')} height={'278'} width={'278'}  />
 			</Grid>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
-			<Accordion>
+			<Accordion className={classes.accordeon}>
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
@@ -395,7 +404,7 @@ const FeaturedPost = (props) => {
 			</Accordion>
 			</Grid>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
-			<Accordion>
+			<Accordion className={classes.accordeon}>
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
@@ -412,7 +421,7 @@ const FeaturedPost = (props) => {
 			</Accordion>
 			</Grid>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
-			<Accordion>
+			<Accordion className={classes.accordeon}>
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
@@ -429,7 +438,7 @@ const FeaturedPost = (props) => {
 			</Accordion>
 			</Grid>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
-			<Accordion>
+			<Accordion className={classes.accordeon}>
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
@@ -446,7 +455,7 @@ const FeaturedPost = (props) => {
 			</Accordion>
 			</Grid>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
-			<Accordion>
+			<Accordion className={classes.accordeon}>
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
@@ -463,7 +472,7 @@ const FeaturedPost = (props) => {
 			</Accordion>
 			</Grid>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
-			<Accordion>
+			<Accordion className={classes.accordeon}>
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
@@ -482,7 +491,7 @@ Btw, actually this is not just a mint pass. The validity period is 5 years (!) a
 			</Accordion>
 			</Grid>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
-			<Accordion>
+			<Accordion className={classes.accordeon}>
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"
