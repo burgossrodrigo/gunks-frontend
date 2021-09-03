@@ -185,7 +185,8 @@ const useStyles = makeStyles((theme) => ({
 	padding: '20px',
     border: '2px solid #FFC40B',
     borderRadius: '10px 10px 10px 10px',
-    backgroundColor: 'black'
+    backgroundColor: 'black',
+	marginBottom: '5vh',
 
   }
   
