@@ -9,6 +9,7 @@ import React, { useState, useEffect } from 'react';
 import getWeb3 from './ethereum.js';
 import Footer from './components/Footer';
 import Particles from 'react-particles-js';
+import { tsParticles } from "tsparticles";
 
 
 function App() {
@@ -30,8 +31,9 @@ function App() {
   return (
     
     <ThemeProvider theme={theme}>
-		<Particles />
 		<Container maxWidth='lg'>
+		<Particles style={{zIndez: '99', height:'100%', position: 'fixed'}} />
+		
 			
 			<Header />
 			<FeaturedPost />
