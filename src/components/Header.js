@@ -142,7 +142,9 @@ const useStyle = makeStyles((theme) => ({
 			
 			display: 'flex',
 			fontSize: '35px',
-			borderBottom: '1px solid #ffb800'
+			borderBottom: '1px solid #ffb800',
+			backgroundColor: 'black',
+			width: '100%'
 			
 		}
 	  
@@ -163,7 +165,52 @@ const useStyle = makeStyles((theme) => ({
 			
 		}
 
-  }
+  },
+
+  buttonOne: {
+
+		[theme.breakpoints.only('xs')]: {width: '100%', marginTop: '10vh', marginBottom: '10vh', margiLeft: '7vw'},
+		[theme.breakpoints.between('sm', 'xl')]: {width: '100%', marginTop: '10vh', marginBottom: '10vh'}
+
+  },
+
+doubleButtonBlue: {
+
+	[theme.breakpoints.only('xs')]: {
+		marginLeft: '5vw', 
+		background: 'linear-gradient(90deg, #f6d048, #c85423)',
+		color: 'white'
+	},
+	[theme.breakpoints.between('sm', 'xl')]: {
+		marginLeft: '5vw', 
+		background: 'linear-gradient(90deg, #f6d048, #c85423)',
+		color: 'white',
+		marginLeft: '20vw',
+		marginTop: '10vh'
+	},
+
+	
+
+},
+
+doubleButtonYellow: {
+
+	[theme.breakpoints.only('xs')]: {
+		marginLeft: '5vw', 
+		background: 'linear-gradient(90deg, #f6d048, #c85423)',
+		color: 'white'
+	},
+	[theme.breakpoints.between('sm', 'xl')]: {
+		marginLeft: '5vw', 
+		background: 'linear-gradient(90deg, #69c9e1, #2151f4 )',
+		color: 'white',
+		marginLeft: '20vw',
+		marginTop: '10vh'
+	},
+
+	
+
+}
   
   
 	
@@ -214,22 +261,22 @@ const Header = (props) => {
 		
 		
 
-				<Toolbar className={classes.toolBar} style={{color: 'secundary'}}>	
-				<Grid container>
-				<Grid item><img src={require('./image/logo.png')} /></Grid>
-				<Grid item><Typography style={{marginTop: '6vh', marginLeft: '2vw'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
-			</Grid>					<IconButton color='inherit'>
-						<Badge badgeContent={1} color='secundary'>
-							<AccountBalanceWalletIcon color="primary" onClick={() => {setWallet(true);}} />
+				<Toolbar className={classes.toolBar} style={{backgroundColor: 'black'}}>	
+					<Grid container>
+					<Grid item><img src={require('./image/logo.png')} /></Grid>
+					<Grid item><Typography style={{marginTop: '8vh', marginLeft: '2vw', fontSize: '18px'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
+					</Grid>					
+					<IconButton color='inherit' fontSize="large">
+						<Badge badgeContent={1} color='white' >
+							<AccountBalanceWalletIcon size="large" color="white" onClick={() => {setWallet(true);}} />
 						</Badge>
-					</IconButton>
-					<SideDrawer>
-						<IconButton>
-							<MenuIcon color="primary" />
 						</IconButton>
-					</SideDrawer>
-					
-		</Toolbar> 
+						<SideDrawer>
+							<IconButton>
+								<MenuIcon color="white" size="large" />
+							</IconButton>
+						</SideDrawer>
+				</Toolbar> 
 
 			<Toolbar className={classes.countdown}>
 				<Grid container alignItems="center" justifyContent="center" style={{marginTop: '10vh'}}>
@@ -242,21 +289,13 @@ Gunks is an NFT Collection of 4269 unique characters that bring utility by givin
 
 						</Typography>
 					</Grid>
-					<Grid container container spacing={3} style={{width: '100%', marginTop: '10vh', marginBottom: '10vh'}}>
+					<Grid container justifyContent="center" alignItems="center" spacing={3} className={classes.buttonOne}>
 						<Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-						<Button style={{
-								marginRight: '5vw', 
-								background: 'linear-gradient(90deg, #f6d048, #c85423)',
-								color: 'white'
-								}} size="large" variant="contained">Learn</Button>
+						<Button className={classes.doubleButtonBlue} size="large" variant="contained">Learn</Button>
 
 						</Grid>
 						<Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
-						<Button style={{
-								marginRight: '5vw', 
-								background: 'linear-gradient(90deg, #69c9e1, #2151f4 )',
-								color: 'white'
-								}} size="large" variant="contained">Roadmap</Button>
+						<Button className={classes.doubleButtonYellow} size="large" variant="contained">Roadmap</Button>
 
 						</Grid>
 					</Grid>

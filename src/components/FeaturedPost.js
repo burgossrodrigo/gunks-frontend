@@ -189,7 +189,7 @@ const FeaturedPost = (props) => {
  
     return(<>
 	
-	<Grid container alignItems="center" justifyContent="center" spacing={3} style={{width: '100%', marginTop: '10vh'}}>
+	<Grid container alignItems="center" justifyContent="center" spacing={3} style={{width: '100%', marginTop: '10vh', marginLeft: '20vw'}}>
 						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh'}}>
 						<Box className={classes.mintBox} >
 					<Typography variant='h3'>4,269</Typography>
@@ -197,7 +197,7 @@ const FeaturedPost = (props) => {
 				</Box>
 
 						</Grid>
-						<Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh'}}>
 						<Box className={classes.mintBox}>
 					<Typography variant='h3' >0.033</Typography>
 					<Typography variant='h6' >MINT PRICE</Typography>
