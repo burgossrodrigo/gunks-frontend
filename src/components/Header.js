@@ -25,8 +25,7 @@ const useStyle = makeStyles((theme) => ({
 	title: {
 
 		flexGrow: 1,
-		justifyContent: 'left',
-		color: 'red'
+		justifyContent: 'left'
 	},
 
 	tagLine: {
@@ -74,7 +73,7 @@ const useStyle = makeStyles((theme) => ({
   toolbar: {
 	  
 	  spacing: 8,
-	  
+	  alignText: 'center'
   },
 
   countdown: {
@@ -91,7 +90,8 @@ const useStyle = makeStyles((theme) => ({
 
 	   display: 'flex',
 	   flexDirection: 'column',
-	   padding: '20px'
+	   padding: '20px',
+	   alignText: 'center'
 				  
 	}
 
@@ -232,31 +232,31 @@ const Header = (props) => {
 		</Toolbar> 
 
 			<Toolbar className={classes.countdown}>
-				<Grid container style={{marginTop: '10vh'}}>
+				<Grid container alignItems="center" justifyContent="center" style={{marginTop: '10vh'}}>
 					<Grid item>
 						<Typography align='center' variant='h1'>GUNKS</Typography>
-						<Typography style={{width: '50%', marginLeft: '22vw', marginTop: '10vh'}}align='center' variant='h5'>
+						<Typography style={{marginLeft: '10vw', marginTop: '10vh'}}align='center' variant='h5'>
 
 						GUNKS
 Gunks is an NFT Collection of 4269 unique characters that bring utility by giving back to the community with unique marketing approaches.
 
 						</Typography>
 					</Grid>
-					<Grid container style={{marginLeft: '32vw', marginTop: '10vh'}}>
-						<Grid item>
+					<Grid container container spacing={3} style={{width: '100%', marginTop: '10vh', marginBottom: '10vh'}}>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
 						<Button style={{
 								marginRight: '5vw', 
 								background: 'linear-gradient(90deg, #f6d048, #c85423)',
 								color: 'white'
-								}} size="large" variant="contained">Learn More</Button>
+								}} size="large" variant="contained">Learn</Button>
 
 						</Grid>
-						<Grid>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
 						<Button style={{
 								marginRight: '5vw', 
-								background: 'linear-gradient(90deg, #f6d048, #c85423)',
+								background: 'linear-gradient(90deg, #69c9e1, #2151f4 )',
 								color: 'white'
-								}} size="large" variant="contained">Learn More</Button>
+								}} size="large" variant="contained">Roadmap</Button>
 
 						</Grid>
 					</Grid>

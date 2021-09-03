@@ -8,7 +8,7 @@ import MyComponent from "./MyComponent";
 import React, { useState, useEffect } from 'react';
 import getWeb3 from './ethereum.js';
 import Footer from './components/Footer';
-import RoadMap from './components/Timeline';
+import Particles from 'react-particles-js';
 
 
 function App() {
@@ -30,12 +30,11 @@ function App() {
   return (
     
     <ThemeProvider theme={theme}>
+		<Particles />
 		<Container maxWidth='lg'>
 			
 			<Header />
-			<RoadMap />
 			<FeaturedPost />
-			<br />
 			<Divider /> 	
 			<Footer />	
 		</Container>
