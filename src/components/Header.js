@@ -215,10 +215,10 @@ const Header = (props) => {
 		
 
 				<Toolbar className={classes.toolBar} style={{color: 'secundary'}}>	
-					<Typography variant='h5' className={classes.title}> Seth Gallery </Typography>	
-					
-
-					<IconButton color='inherit'>
+				<Grid container>
+				<Grid item><img src={require('./image/logo.png')} /></Grid>
+				<Grid item><Typography style={{marginTop: '6vh', marginLeft: '2vw'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
+			</Grid>					<IconButton color='inherit'>
 						<Badge badgeContent={1} color='secundary'>
 							<AccountBalanceWalletIcon color="primary" onClick={() => {setWallet(true);}} />
 						</Badge>
