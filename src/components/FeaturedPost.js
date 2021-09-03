@@ -162,6 +162,13 @@ const useStyles = makeStyles((theme) => ({
 
 
 	  
+  },
+
+  gridBox: {
+
+	[theme.breakpoints.only('xs')]:{marginTop: '10vh', marginLeft: '8vw'},
+	[theme.breakpoints.between('sm', 'xl')]:{marginTop: '10vh', marginLeft: '20vw'}
+
   }
   
 })); 
@@ -189,7 +196,7 @@ const FeaturedPost = (props) => {
  
     return(<>
 	
-	<Grid container alignItems="center" justifyContent="center" spacing={3} style={{width: '100%', marginTop: '10vh', marginLeft: '20vw'}}>
+	<Grid container alignItems="center" justifyContent="center" spacing={3} className={classes.gridBox}>
 						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh'}}>
 						<Box className={classes.mintBox} >
 					<Typography variant='h3'>4,269</Typography>
