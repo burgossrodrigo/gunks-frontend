@@ -60,7 +60,8 @@ const useStyle = makeStyles((theme) => ({
   breadcrumb: {
 	
      flexGrow: 2,
-	 border: '1px solid '
+	 border: '1px solid',
+	 opacity: '0.8'
 	  
   },
   
@@ -120,6 +121,7 @@ const useStyle = makeStyles((theme) => ({
 	  		[theme.breakpoints.only('xs')]: {
 			
   display: 'flex',
+  opacity: '0.8'
 
 			
 		},
@@ -143,7 +145,8 @@ const useStyle = makeStyles((theme) => ({
 			display: 'flex',
 			fontSize: '35px',
 			border: '1px solid #ffb800',
-			backgroundColor: 'black'
+			backgroundColor: 'black',
+			opacity: '0.8'
 			
 		}
 	  
@@ -160,7 +163,8 @@ const useStyle = makeStyles((theme) => ({
 			
 			width: '75vw',
 			display: 'flex',
-			flexDirection: 'row'
+			flexDirection: 'row',
+			opacity: '0.8'
 			
 		}
 
