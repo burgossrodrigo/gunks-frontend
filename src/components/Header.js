@@ -301,8 +301,7 @@ Gunks is an NFT Collection of 4269 unique characters that bring utility by givin
 					</Grid>
 				</Grid>
 			</Toolbar>
-
-			<Divider /> 	
+ 	
 			
 
 		

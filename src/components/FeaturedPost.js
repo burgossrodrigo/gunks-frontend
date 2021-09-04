@@ -181,6 +181,13 @@ const useStyles = makeStyles((theme) => ({
 
   },
 
+  gridList:{
+
+	[theme.breakpoints.only('xs')]:{marginTop:"15vh", marginBottom: '15vh', marginLeft: '5vw'},
+	[theme.breakpoints.between('sm', 'xl')]:{marginTop:"15vh", marginBottom: '15vh', marginLeft: '15vw'}
+
+  },
+
   accordeon:{
 
 	padding: '25px',
@@ -253,8 +260,8 @@ const FeaturedPost = (props) => {
 			</Grid>
 		</Grid>	
 			<Divider />
-		<Grid container align="center" justifyContent="center" spacing="3" style={{marginTop:"15vh"}}>	
-			<Grid item xs={12} sm={6} md={6} lg={6} xl={6} justifyContent="center">
+		<Grid container align="center" justifyContent="center" spacing="3" className={classes.gridList}>	
+			<Grid item xs={12} style={{float: 'right'}} sm={6} md={6} lg={6} xl={6} justifyContent="center">
 			<List>
 			<ListItem button>
 				<ListItemIcon>
@@ -319,12 +326,14 @@ const FeaturedPost = (props) => {
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="1000 Discord members" />
-			</ListItem>																					
+			</ListItem>																				
 			</List>
 			</Grid>
 			<Grid item xs={12} sm={6} md={6} lg={6} xl={6} >
-				<img style={{float: 'right', marginTop: '15vh'}} src={require('./image/2.jpg')} height={'278'} width={'278'}  />	
+				<img style={{float: 'left'}} src={require('./image/2.jpg')} height={'278'} width={'278'}  />	
 			</Grid>
+			</Grid>
+			<Grid container justifyContent="center" justifyContent="center" spacing={3} className={classes.gridList} >
 			<Grid item xs={12} sm={6} md={6} lg={6} xl={6} >
 			<List>
 			<ListItem button>
@@ -393,9 +402,12 @@ const FeaturedPost = (props) => {
 			</ListItem>																					
 			</List>			
 			</Grid>
-			<Grid item justifyContent="center"  xs={12} sm={6} md={6} lg={6} xl={6} >
-				<img style={{float: 'right', marginTop: '15vh'}} src={require('./image/2.jpg')} height={'278'} width={'278'}  />
+			<Grid item justifyContent="center"  xs={12} sm={6} md={6} lg={6} xl={6}  >
+				<img style={{float: 'left'}} src={require('./image/3.jpg')} height={'278'} width={'278'}  />
+			</Grid>			
 			</Grid>
+			<Divider />
+			<Grid container justifyContent="center" justifyContent="center" spacing={3} style={{marginTop:'15vh'}}>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
 				
 			<Accordion className={classes.accordeon}>
