@@ -60,7 +60,7 @@ const useStyle = makeStyles((theme) => ({
   breadcrumb: {
 	
      flexGrow: 1,
-	 borderBottom: '1px solid '
+	 border: '1px solid '
 	  
   },
   
@@ -142,7 +142,7 @@ const useStyle = makeStyles((theme) => ({
 			
 			display: 'flex',
 			fontSize: '35px',
-			borderBottom: '1px solid #ffb800',
+			border: '1px solid #ffb800',
 			backgroundColor: 'black',
 			width: '100%'
 			

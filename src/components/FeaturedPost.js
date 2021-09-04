@@ -23,6 +23,7 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -182,17 +183,23 @@ const useStyles = makeStyles((theme) => ({
 
   accordeon:{
 
-	padding: '20px',
+	padding: '25px',
     border: '2px solid #FFC40B',
-    borderRadius: '10px 10px 10px 10px',
+    borderRadius: '20px 20px 20px 20px',
     backgroundColor: 'black',
 	marginBottom: '5vh',
+	opacity: '0.8'
 
   }
   
 })); 
 
 const FeaturedPost = (props) => {
+
+	useEffect(() => {
+
+
+	})
 	
 	
 	const [balanceName, setBalanceName] = useState('');
@@ -216,14 +223,14 @@ const FeaturedPost = (props) => {
     return(<>
 	
 	<Grid container alignItems="center" justifyContent="center" spacing={3} className={classes.gridBox}>
-						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh'}}>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh', marginTop: '15vh'}}>
 						<Box className={classes.mintBox} >
 					<Typography variant='h3'>4,269</Typography>
 					<Typography variant='h6'>SUPPLY</Typography>
 				</Box>
 
 						</Grid>
-						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh'}}>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh', marginTop: '15vh'}}>
 						<Box className={classes.mintBox}>
 					<Typography variant='h3' >0.033</Typography>
 					<Typography variant='h6' >MINT PRICE</Typography>
@@ -234,7 +241,7 @@ const FeaturedPost = (props) => {
 		
 		<Divider />
 
-		<Grid container alignItems="center" justifyContent="center" spacing={3} style={{ marginTop: '15vh'}}>
+		<Grid container alignItems="center" justifyContent="center" spacing={3} style={{ marginTop: '15vh', marginBottom: '15vh'}}>
 			<Grid item justifyContent="center" xs={12} sm={6} md={6} lg={6} xl={6} >
 				<img style={{float: 'left'}} src={require('./image/1.jpg')} height={'278'} width={'278'}  />
 			</Grid>
@@ -244,13 +251,15 @@ const FeaturedPost = (props) => {
 				Gunks is a collection of 4269 Gunks NFTS unique with different accessories and designs on the Ethereum blockchain. The more gunks being sold equals more giveaways for the community to grow 	
 				</Typography>						
 			</Grid>
+		</Grid>	
 			<Divider />
+		<Grid container align="center" justifyContent="center" spacing="3" style={{marginTop:"15vh"}}>	
 			<Grid item xs={12} sm={6} md={6} lg={6} xl={6} justifyContent="center">
 			<List>
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Mass marketing at initial phase including" />
@@ -258,7 +267,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Twitter promos" />
@@ -266,7 +275,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Reddit promotions" />
@@ -274,7 +283,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Telegram promos" />
@@ -282,7 +291,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Giveaways" />
@@ -290,7 +299,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Cash giveaways" />
@@ -298,7 +307,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Nft giveaways" />
@@ -306,7 +315,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="1000 Discord members" />
@@ -317,11 +326,11 @@ const FeaturedPost = (props) => {
 				<img style={{float: 'right', marginTop: '15vh'}} src={require('./image/2.jpg')} height={'278'} width={'278'}  />	
 			</Grid>
 			<Grid item xs={12} sm={6} md={6} lg={6} xl={6} >
-			<List style={{marginTop: '15vh', float: 'left'}}>
+			<List>
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Mass marketing at initial phase including" />
@@ -329,7 +338,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Twitter promos" />
@@ -337,7 +346,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Reddit promotions" />
@@ -345,7 +354,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Telegram promos" />
@@ -353,7 +362,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Giveaways" />
@@ -361,7 +370,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Cash giveaways" />
@@ -369,7 +378,7 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="Nft giveaways" />
@@ -377,17 +386,18 @@ const FeaturedPost = (props) => {
 			<ListItem button>
 				<ListItemIcon>
 					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://portoesajatojcm.com.br/wp-content/uploads/sites/9/2020/02/236-2362999_check-icon-yellow-check-icon-png.png"/>
+						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
 				<ListItemText primary="1000 Discord members" />
 			</ListItem>																					
-			</List>
+			</List>			
 			</Grid>
-			<Grid item justifyContent="center" xs={12} sm={6} md={6} lg={6} xl={6} >
+			<Grid item justifyContent="center"  xs={12} sm={6} md={6} lg={6} xl={6} >
 				<img style={{float: 'right', marginTop: '15vh'}} src={require('./image/2.jpg')} height={'278'} width={'278'}  />
 			</Grid>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+				
 			<Accordion className={classes.accordeon}>
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
@@ -509,6 +519,14 @@ MetaMask is a software cryptocurrency wallet used to interact with the Ethereum 
 				</Typography>
 				</AccordionDetails>
 			</Accordion>
+			</Grid>
+			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
+				<Box>
+					<Grid container>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6}><Typography></Typography></Grid>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6}></Grid>
+					</Grid>
+				</Box>
 			</Grid>						
 		</Grid>
 		
