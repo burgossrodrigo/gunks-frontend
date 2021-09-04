@@ -262,12 +262,12 @@ const Header = (props) => {
 
 				<Toolbar className={classes.toolBar} style={{backgroundColor: 'black'}}>	
 					<Grid container>
-					<Grid item><img src={require('./image/logo.png')} /></Grid>
-					<Grid item><Typography style={{marginTop: '8vh', marginLeft: '2vw', fontSize: '18px'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
+					<Grid item><img src={require('./image/logo.png')} width={75} height={75} /></Grid>
+					<Grid item><Typography style={{marginTop: '4vh', marginLeft: '2vw', fontSize: '18px'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
 					</Grid>					
 					<IconButton color='inherit' fontSize="large">
 						<Badge badgeContent={1} color='white' >
-							<AccountBalanceWalletIcon size="large" color="white" onClick={() => {setWallet(true);}} />
+							<AccountBalanceWalletIcon size="large" color="primary" onClick={() => {setWallet(true);}} />
 						</Badge>
 						</IconButton>
 						<SideDrawer>
