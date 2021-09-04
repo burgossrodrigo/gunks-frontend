@@ -197,6 +197,19 @@ const useStyles = makeStyles((theme) => ({
 	opacity: '0.8',
 	color: 'white',
 	letterSpacing: '5px'
+  },
+
+  mint: {
+
+	[theme.breakpoints.only('xs')]:{},
+	[theme.breakpoints.between('sm', 'xl')]:{
+
+		background: 'linear-gradient(90deg, #f6d048, #c85423)',
+		color: 'white',
+		marginLeft: '42vw'
+
+	}	
+
   }
   
   
@@ -231,7 +244,7 @@ const FeaturedPost = (props) => {
     return(<>
 	
 	<Grid container alignItems="center" justifyContent="center" spacing={3} className={classes.gridBox}>
-						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh', marginTop: '15vh'}}>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '10vh', marginTop: '15vh'}}>
 						<Box style={{float: 'right', padding: '20px'}} >
 					<Card variant='outlined' style={{backgroundColor: 'black', color: 'white', padding: '30px'}}>		
 						<Typography variant='h3'>4,269</Typography>
@@ -240,7 +253,7 @@ const FeaturedPost = (props) => {
 				</Box>
 
 						</Grid>
-						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh', marginTop: '15vh'}}>
+						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '10vh', marginTop: '15vh'}}>
 						<Box style={{float: 'left', padding: '20px'}}>
 						<Card variant='outlined' style={{backgroundColor: 'black', color: 'white', padding: '30px'}}>
 						<Typography variant='h3' >0.033</Typography>
@@ -250,7 +263,7 @@ const FeaturedPost = (props) => {
 
 						</Grid>
 					<Grid item xs={3} sm={3} md={3} lg={3} xl={3} style={{marginBottom: '15vh', marginTop: '10vh'}}>
-					{ window.web3 ? <Button size="large" variant="contained"> Mint!</Button> : <Button size="large" variant="contained" onClick={() => {window.ethereum.enable()}} >Connect</Button> }	
+					{ window.web3 ? <Button size="large" className={classes.mint} variant="contained"> Mint!</Button> : <Button size="large" variant="contained" onClick={() => {window.ethereum.enable()}} >Connect</Button> }	
 					</Grid>
 
 					</Grid>
