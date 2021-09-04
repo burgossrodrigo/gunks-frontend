@@ -43,7 +43,7 @@ function App() {
   return (
     
     <ThemeProvider theme={theme}>
-		<Container maxWidth='lg'>
+		<Container maxWidth='xl'>
 		<Particles style={{zIndez: '99', height:'100%', position: 'fixed'}} />
 		
 			

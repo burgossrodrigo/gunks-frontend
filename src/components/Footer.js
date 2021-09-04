@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 		[theme.breakpoints.only('xs')]: {
 			
   display: 'flex',
-  flexDirection: 'column',
+  flexDirection: 'row',
    textAlign: 'left',
 			
 		},
