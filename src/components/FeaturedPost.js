@@ -201,7 +201,13 @@ const useStyles = makeStyles((theme) => ({
 
   mint: {
 
-	[theme.breakpoints.only('xs')]:{},
+	[theme.breakpoints.only('xs')]:{
+
+		background: 'linear-gradient(90deg, #f6d048, #c85423)',
+		color: 'white',
+		marginLeft: '42vw'
+
+	},
 	[theme.breakpoints.between('sm', 'xl')]:{
 
 		background: 'linear-gradient(90deg, #f6d048, #c85423)',
