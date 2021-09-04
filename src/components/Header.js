@@ -59,7 +59,7 @@ const useStyle = makeStyles((theme) => ({
   
   breadcrumb: {
 	
-     flexGrow: 1,
+     flexGrow: 2,
 	 border: '1px solid '
 	  
   },
@@ -143,8 +143,7 @@ const useStyle = makeStyles((theme) => ({
 			display: 'flex',
 			fontSize: '35px',
 			border: '1px solid #ffb800',
-			backgroundColor: 'black',
-			width: '100%'
+			backgroundColor: 'black'
 			
 		}
 	  
@@ -159,7 +158,7 @@ const useStyle = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.between('sm', 'xl')]: {
 			
-			width: '70vw',
+			width: '75vw',
 			display: 'flex',
 			flexDirection: 'row'
 			
@@ -169,7 +168,7 @@ const useStyle = makeStyles((theme) => ({
 
   buttonOne: {
 
-		[theme.breakpoints.only('xs')]: {width: '100%', marginTop: '10vh', marginBottom: '10vh', margiLeft: '7vw'},
+		[theme.breakpoints.only('xs')]: {width: '100%', marginTop: '10vh', marginBottom: '10vh', position: 'relative'},
 		[theme.breakpoints.between('sm', 'xl')]: {width: '100%', marginTop: '10vh', marginBottom: '10vh'}
 
   },
@@ -177,16 +176,17 @@ const useStyle = makeStyles((theme) => ({
 doubleButtonBlue: {
 
 	[theme.breakpoints.only('xs')]: {
-		marginLeft: '5vw', 
+		position: 'relative', 
 		background: 'linear-gradient(90deg, #f6d048, #c85423)',
 		color: 'white'
+
 	},
 	[theme.breakpoints.between('sm', 'xl')]: {
-		marginLeft: '5vw', 
 		background: 'linear-gradient(90deg, #f6d048, #c85423)',
 		color: 'white',
-		marginLeft: '20vw',
-		marginTop: '10vh'
+		marginTop: '10vh',
+		position: 'relative',
+		float: 'right'
 	},
 
 	
@@ -196,16 +196,15 @@ doubleButtonBlue: {
 doubleButtonYellow: {
 
 	[theme.breakpoints.only('xs')]: {
-		marginLeft: '5vw', 
 		background: 'linear-gradient(90deg, #f6d048, #c85423)',
-		color: 'white'
+		color: 'white',
+		
 	},
-	[theme.breakpoints.between('sm', 'xl')]: {
-		marginLeft: '5vw', 
+	[theme.breakpoints.between('sm', 'xl')]: { 
 		background: 'linear-gradient(90deg, #69c9e1, #2151f4 )',
 		color: 'white',
-		marginLeft: '20vw',
-		marginTop: '10vh'
+		marginTop: '10vh',
+		float: 'left'
 	},
 
 	
@@ -237,7 +236,7 @@ const Header = (props) => {
 		<Toolbar className={classes.breadCrumbs} style={{color: 'secundary'}} >
 			<Grid container>
 				<Grid item><img src={require('./image/logo.png')} /></Grid>
-				<Grid item><Typography style={{marginTop: '6vh', marginLeft: '2vw'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
+				<Grid item><Typography style={{marginTop: '6vh'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
 			</Grid>				
 			<Breadcrumbs className={classes.bread} aria-label="breadcrumb" separator=' | '>
 			  <Link color="primary" href='#about' className={classes.link} variant='inherit' >
@@ -282,7 +281,7 @@ const Header = (props) => {
 				<Grid container alignItems="center" justifyContent="center" style={{marginTop: '10vh'}}>
 					<Grid item>
 						<Typography align='center' variant='h1'>GUNKS</Typography>
-						<Typography style={{marginLeft: '10vw', marginTop: '10vh'}}align='center' variant='h5'>
+						<Typography style={{marginTop: '10vh'}}align='center' variant='h5'>
 
 						GUNKS
 Gunks is an NFT Collection of 4269 unique characters that bring utility by giving back to the community with unique marketing approaches.
