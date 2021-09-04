@@ -65,30 +65,24 @@ const Footer = () => {
 		
 		aria-labelledby="nested-list-subheader"
 		subheader={
-        <ListSubheader component="div" id="Social">
+        <ListSubheader color="pimary" component="div" id="Social">
           Social
         </ListSubheader>
 		}
 		
 		>
 			<ListItem button>
-				<ListItemIcon onClick={() => {window.open('https://t.me/SethNFT');}} >
-					<TelegramIcon  classes={{root: classes.iconRoot}} />
+				<ListItemIcon>
+					<Icon classes={{root: classes.iconRoot}}>
+					  <img className={classes.imageIcon} src="https://icones.pro/wp-content/uploads/2021/03/logo-discord-icone-png-jaune.png"/>
+					</Icon> 
 				</ListItemIcon>	
-				<ListItemText primary="Telegram" />
+				<ListItemText primary="Discord" />
 			</ListItem>
-			
-			<ListItem button>
-				<ListItemIcon onClick={() => {window.open('https://www.reddit.com/r/SethNFT');}} >
-					<RedditIcon  classes={{root: classes.iconRoot}} />
-				</ListItemIcon>	
-				<ListItemText primary="Reddit" />
-			</ListItem>
-			
-				
+	
 			<ListItem button>
 				<ListItemIcon onClick={() => {window.open('https://twitter.com/SethNft');}} >
-					<TwitterIcon  classes={{root: classes.iconRoot}} />
+					<TwitterIcon color="primary"  classes={{root: classes.iconRoot}} />
 				</ListItemIcon>	
 				<ListItemText primary="Twitter" />
 			</ListItem>
@@ -96,55 +90,23 @@ const Footer = () => {
 
 		</List>
 
-		<List
-		
-		mr='55px'
-		aria-labelledby="nested-list-subheader"
-		subheader={
-        <ListSubheader component="div" id="Social">
-          Blockchain and Development
-        </ListSubheader>
-		}>
-			<ListItem button>
-				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://cryptologos.cc/logos/pancakeswap-cake-logo.png"/>
-					</Icon> 
-				</ListItemIcon>	
-				<ListItemText primary="Pancake Swap" />
+		<List style={{fontSize: '15px'}} aria-labelledby="nested-list-subheader" subheader={<ListSubheader color="pimary" component="div" id="Social">Navigation</ListSubheader>}>
+			<ListItem className={classes.iconRoot}>
+				About
 			</ListItem>
-			
-			<ListItem button>
-				<ListItemIcon>
-					<GitHubIcon />
-				</ListItemIcon>	
-				<ListItemText primary="GitHub" />
+			<ListItem>
+				Team	
 			</ListItem>
-			
-				
-			<ListItem button>
-				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
-					  <img className={classes.imageIcon} src="https://bscscan.com/images/brandassets/BscScan-logo-circle.jpg"/>
-					</Icon> 
-				</ListItemIcon>	
-				<ListItemText primary="BSC Scan" />
+			<ListItem>
+				Roadmap	
 			</ListItem>
-			
-			<ListItem button>
-				<ListItemIcon>
-					<GitHubIcon />
-				</ListItemIcon>	
-				<ListItemText primary="GitHub" />
+			<ListItem>
+				Faq
 			</ListItem>
-			
-			<ListItem button>
-				<ListItemIcon>
-					<BarChartIcon />
-				</ListItemIcon>
-				<ListItemText primary="Chart" />
-			</ListItem>
-		</List>		
+			<ListItem>
+				Chart	
+			</ListItem>	
+		</List>
 		</Box>
 	</Box>
 	</>

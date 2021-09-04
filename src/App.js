@@ -20,7 +20,7 @@ function App() {
 				light: '#ffea4d',
 				main: '#ffb800',
 				dark: '#c78800',
-				contrastText: 'white',
+				white: 'white',
 			  },
 			  secondary: {
 				light: '#9efcff',

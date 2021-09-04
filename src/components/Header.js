@@ -253,7 +253,7 @@ const Header = (props) => {
 				FAQ
 			  </Link>
 			  <Link underline='hover' color="primary" className={classes.link} variant='inherit' >
-				Chart
+				Multivisa
 			  </Link>
 			</Breadcrumbs>
 		</Toolbar>

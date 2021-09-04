@@ -409,7 +409,7 @@ const FeaturedPost = (props) => {
 			</Grid>			
 			</Grid>
 			<Divider />
-			<Grid container justifyContent="center" justifyContent="center" spacing={3} style={{marginTop:'15vh'}}>
+			<Grid container justifyContent="center" id="about" justifyContent="center" spacing={3} style={{marginTop:'15vh'}}>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
 				
 			<Accordion className={classes.accordeon} color="contrastText"> 
@@ -543,6 +543,8 @@ MetaMask is a software cryptocurrency wallet used to interact with the Ethereum 
 				</Box>
 			</Grid>						
 		</Grid>
+
+		<iframe class="discord" src="https://discordapp.com/widget?id=201798443583143936&theme=dark"/>
 		
 		
 		
