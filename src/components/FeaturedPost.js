@@ -195,9 +195,11 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '20px 20px 20px 20px',
     backgroundColor: 'black',
 	marginBottom: '5vh',
-	opacity: '0.8'
-
+	opacity: '0.8',
+	color: 'white',
+	letterSpacing: '5px'
   }
+  
   
 })); 
 
@@ -410,7 +412,7 @@ const FeaturedPost = (props) => {
 			<Grid container justifyContent="center" justifyContent="center" spacing={3} style={{marginTop:'15vh'}}>
 			<Grid item justifyContent="center" xs={12} sm={12} md={12} lg={12} xl={12}>
 				
-			<Accordion className={classes.accordeon}>
+			<Accordion className={classes.accordeon} color="contrastText"> 
 				<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls="panel1a-content"

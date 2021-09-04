@@ -29,7 +29,7 @@ function App() {
 				contrastText: 'white',
 			  },
 
-			  typography: {fontFamily: 'Arial', color: 'white'}
+			  typography: {fontFamily: 'Arial'}
 		},
 
 		});

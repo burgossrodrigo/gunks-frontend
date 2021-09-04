@@ -240,7 +240,7 @@ const Header = (props) => {
 				<Grid item><Typography style={{marginTop: '6vh', marginLeft: '2vw'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
 			</Grid>				
 			<Breadcrumbs className={classes.bread} aria-label="breadcrumb" separator=' | '>
-			  <Link color="primary" href='' className={classes.link} variant='inherit' >
+			  <Link color="primary" href='#about' className={classes.link} variant='inherit' >
 				ABOUT
 			  </Link>
 			  <Link underline='hover' color="primary" href='' className={classes.link} variant='inherit' >
