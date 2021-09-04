@@ -266,7 +266,7 @@ const Header = (props) => {
 					<Grid item><Typography style={{marginTop: '4vh', marginLeft: '2vw', fontSize: '18px'}} variant='h4' className={classes.title}> GUNKS </Typography></Grid>
 					</Grid>					
 					<IconButton color='inherit' fontSize="large">
-						<Badge badgeContent={1} color='white' >
+						<Badge badgeContent={1} color='secondary' >
 							<AccountBalanceWalletIcon size="large" color="primary" onClick={() => {setWallet(true);}} />
 						</Badge>
 						</IconButton>

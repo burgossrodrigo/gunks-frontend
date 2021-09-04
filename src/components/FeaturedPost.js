@@ -233,20 +233,24 @@ const FeaturedPost = (props) => {
 	<Grid container alignItems="center" justifyContent="center" spacing={3} className={classes.gridBox}>
 						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh', marginTop: '15vh'}}>
 						<Box style={{float: 'right', padding: '20px'}} >
-					<Typography variant='h3'>4,269</Typography>
-					<Typography variant='h6'>SUPPLY</Typography>
+					<Card variant='outlined' style={{backgroundColor: 'black', color: 'white', padding: '30px'}}>		
+						<Typography variant='h3'>4,269</Typography>
+						<Typography variant='h6'>SUPPLY</Typography>
+					</Card>
 				</Box>
 
 						</Grid>
 						<Grid item xs={6} sm={6} md={6} lg={6} xl={6} style={{marginBottom: '15vh', marginTop: '15vh'}}>
 						<Box style={{float: 'left', padding: '20px'}}>
-					<Typography variant='h3' >0.033</Typography>
-					<Typography variant='h6' >MINT PRICE</Typography>
+						<Card variant='outlined' style={{backgroundColor: 'black', color: 'white', padding: '30px'}}>
+						<Typography variant='h3' >0.033</Typography>
+						<Typography variant='h6' >MINT PRICE</Typography>
+					</Card>
 				</Box>
 
 						</Grid>
 					<Grid item xs={3} sm={3} md={3} lg={3} xl={3} style={{marginBottom: '15vh', marginTop: '10vh'}}>
-						
+					{ window.web3 ? <Button size="large" variant="contained"> Mint!</Button> : <Button size="large" variant="contained" onClick={() => {window.ethereum.enable()}} >Connect</Button> }	
 					</Grid>
 
 					</Grid>
