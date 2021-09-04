@@ -3,7 +3,7 @@ import { Container, Box, Divider } from '@material-ui/core';
 import Header from './components/Header';
 import FeaturedPost from './components/FeaturedPost';
 import { ThemeProvider } from '@material-ui/core/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
+import {createMuiTheme} from '@material-ui/core/styles';
 import MyComponent from "./MyComponent";
 import React, { useState, useEffect } from 'react';
 import getWeb3 from './ethereum.js';
@@ -16,9 +16,21 @@ function App() {
 		
 		const theme = createMuiTheme({
 		palette: {
-		  type: "dark",
+			primary: {
+				light: '#ffea4d',
+				main: '#ffb800',
+				dark: '#c78800',
+				contrastText: 'white',
+			  },
+			  secondary: {
+				light: '#9efcff',
+				main: '#69c9e1',
+				dark: '#2e98af',
+				contrastText: 'white',
+			  },
+
+			  typography: {fontFamily: 'Arial', color: 'white'}
 		},
-		spacing: 2,
 
 		});
 

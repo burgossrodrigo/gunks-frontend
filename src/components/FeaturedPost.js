@@ -265,7 +265,7 @@ const FeaturedPost = (props) => {
 			<List>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="primary" classes={{root: classes.iconRoot}}>
 					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -273,7 +273,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="primary"classes={{root: classes.iconRoot}}>
 					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -281,7 +281,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="primary" classes={{root: classes.iconRoot}}>
 					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -289,7 +289,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="primary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -297,7 +297,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="primary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -305,7 +305,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="primary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -313,7 +313,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="primary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -321,7 +321,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="primary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -338,7 +338,7 @@ const FeaturedPost = (props) => {
 			<List>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="secondary" classes={{root: classes.iconRoot}}>
 					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -346,7 +346,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="secondary" classes={{root: classes.iconRoot}}>
 					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -354,7 +354,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="secondary" classes={{root: classes.iconRoot}}>
 					<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -362,7 +362,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="secondary"classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -370,7 +370,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="secondary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -378,7 +378,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="secondary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -386,7 +386,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="secondary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -394,7 +394,7 @@ const FeaturedPost = (props) => {
 			</ListItem>
 			<ListItem button>
 				<ListItemIcon>
-					<Icon classes={{root: classes.iconRoot}}>
+					<Icon color="secondary" classes={{root: classes.iconRoot}}>
 						<CheckCircleOutlineIcon />
 					</Icon> 
 				</ListItemIcon>	
@@ -416,13 +416,13 @@ const FeaturedPost = (props) => {
 				aria-controls="panel1a-content"
 				id="panel1a-header"
 				>
-				<Typography className={classes.heading}>Can i joing gunks community?</Typography>
+				<Typography color="contrastText" className={classes.heading}>Can i joing gunks community?</Typography>
 				</AccordionSummary>
 				<Divider />
 				<AccordionDetails>	
-				<Typography>
+				<Typography color="contrastText">
 					This is the name of the race of Alt-896 inhabitants
-				</Typography>
+				</Typography  >
 				</AccordionDetails>
 			</Accordion>
 			</Grid>
@@ -433,11 +433,11 @@ const FeaturedPost = (props) => {
 				aria-controls="panel1a-content"
 				id="panel1a-header"
 				>
-				<Typography className={classes.heading}>What is Gunks?</Typography>
+				<Typography color="contrastText" className={classes.heading}>What is Gunks?</Typography>
 				</AccordionSummary>
 				<Divider />
 				<AccordionDetails>	
-				<Typography>
+				<Typography color="contrastText" >
 					Actually it doesn`t. For example: 7,777 Kedu
 				</Typography>
 				</AccordionDetails>
@@ -450,11 +450,11 @@ const FeaturedPost = (props) => {
 				aria-controls="panel1a-content"
 				id="panel1a-header"
 				>
-				<Typography className={classes.heading}>How do I buy a Gunks NFT?</Typography>
+				<Typography color="contrastText" className={classes.heading}>How do I buy a Gunks NFT?</Typography>
 				</AccordionSummary>
 				<Divider />
 				<AccordionDetails>	
-				<Typography>
+				<Typography color="contrastText">
 				Over 300 traits, hand drawn from bottom of our hearts. Also, if we count the layers for each Kedu, there are 8 different of them. So, basically there was total of over 100,000,000 possible variations of Kedu but we patiently chose only 7,777 dope Kedu.
 				</Typography>
 				</AccordionDetails>
@@ -471,7 +471,7 @@ const FeaturedPost = (props) => {
 				</AccordionSummary>
 				<Divider />
 				<AccordionDetails>	
-				<Typography>
+				<Typography color="contrastText">
 				Over 300 traits, hand drawn from bottom of our hearts. Also, if we count the layers for each Kedu, there are 8 different of them. So, basically there was total of over 100,000,000 possible variations of Kedu but we patiently chose only 7,777 dope Kedu.
 				</Typography>
 				</AccordionDetails>
@@ -484,11 +484,11 @@ const FeaturedPost = (props) => {
 				aria-controls="panel1a-content"
 				id="panel1a-header"
 				>
-				<Typography className={classes.heading}>Can I still mint one?</Typography>
+				<Typography color="contrastText" className={classes.heading}>Can I still mint one?</Typography>
 				</AccordionSummary>
 				<Divider />
 				<AccordionDetails>	
-				<Typography>
+				<Typography color="contrastText">
 				During the public mint, you can get a Kedu on this website via Metamask web3 extension. If you were not able to get one first hand, you can always buy one from our owners on secondary markets such as Opensea, Rarible...
 				</Typography>
 				</AccordionDetails>
@@ -505,7 +505,7 @@ const FeaturedPost = (props) => {
 				</AccordionSummary>
 				<Divider />
 				<AccordionDetails>	
-				<Typography>
+				<Typography color="contrastText" >
 				The best way to avoid gas wars is holding Alt Multivisa. This is the official mint pass for early private mint (24h of duration). For each Alt Multivisa you have access to mint max of 3 Kedu.
 
 Btw, actually this is not just a mint pass. The validity period is 5 years (!) and all Multivisa have really huge benefits for their holders. So, if you want to read all the details please welcome to our Discord
@@ -524,7 +524,7 @@ Btw, actually this is not just a mint pass. The validity period is 5 years (!) a
 				</AccordionSummary>
 				<Divider />
 				<AccordionDetails>	
-				<Typography>
+				<Typography color="contrastText" >
 				A non-fungible token (NFT) is a unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable. NFTs can be used to represent items such as photos, videos, audio, and other types of digital files. Access to any copy of the original file, however, is not restricted to the buyer of the NFT. While copies of these digital items are available for anyone to obtain, NFTs are tracked on blockchains to provide the owner with a proof of ownership that is separate from copyright.
 
 MetaMask is a software cryptocurrency wallet used to interact with the Ethereum blockchain. It allows users to access their Ethereum wallet through a browser extension or mobile app, which can then be used to interact with decentralized applications.
