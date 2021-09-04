@@ -272,7 +272,7 @@ const Header = (props) => {
 						</IconButton>
 						<SideDrawer>
 							<IconButton>
-								<MenuIcon color="white" size="large" />
+								<MenuIcon color="primary" size="large" />
 							</IconButton>
 						</SideDrawer>
 				</Toolbar> 
